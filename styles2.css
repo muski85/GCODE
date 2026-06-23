@@ -1,0 +1,14 @@
+:root {
+    --color-cream:         #fdf8f8;  /* Main background */
+    --color-cream-dark:    #f1edec;  /* Slightly darker section background */
+    --color-cream-lowest:  #ffffff;  /* White panels */
+    --color-charcoal:      #1c1b1b;  /* Main text colour */
+    --color-mahogany:      #894e47;  /* Brand accent (buttons, links) */
+    --color-mahogany-hover:#6d3731;  /* Darker accent for hover */
+    --color-taupe:         #747878;  /* Muted/secondary text */
+    --color-light-accent:  #ebe7e6;  /* Soft borders */
+    --color-border:        #c4c7c7;  /* Standard borders */
+
+    --font-serif: 'EB Garamond', Georgia, serif;
+    --font-sans:  'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+}
