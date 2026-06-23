@@ -8,7 +8,54 @@
     --color-taupe:         #747878;  /* Muted/secondary text */
     --color-light-accent:  #ebe7e6;  /* Soft borders */
     --color-border:        #c4c7c7;  /* Standard borders */
-
     --font-serif: 'EB Garamond', Georgia, serif;
     --font-sans:  'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
 }
+
+/* -----------------------------------------------------------------
+   2. BASE / BODY
+   ----------------------------------------------------------------- */
+body {
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* -----------------------------------------------------------------
+   3. TYPOGRAPHY
+   ----------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6,
+.font-serif {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+/* Small, spaced-out uppercase label (used above headings) */
+.label-caps {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Reusable accent text colour */
+.text-mahogany {
+    color: var(--color-mahogany);
+}
+
+
+/* -----------------------------------------------------------------
+   4. LAYOUT HELPERS
+   Simple max-width wrappers to keep content readable.
+   ----------------------------------------------------------------- */
+.max-width-container { max-width: 1280px; margin: 0 auto; }
+.max-width-800       { max-width: 800px;  margin: 0 auto; }
+.max-width-600       { max-width: 600px;  margin: 0 auto; }
+

@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Our own styles -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles2.css" rel="stylesheet">
 
 </head>
 <body>
@@ -24,12 +24,14 @@
     <!-- =========================================================
          HEADER / NAVIGATION
          ========================================================= -->
-    <header>
-        <nav>
+    <header class="fixed-top">
+
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid max-width-container ">
             <!-- Logo: an icon + the restaurant name -->
-            <a href="#home">
-                <i class="bi bi-cup-hot-fill"></i>
-                <h1>The Reserve</h1>
+            <a class="navbar-brand d-flex align-items-center gap-2 " href="#home">
+                <i class="bi bi-cup-hot-fill fs-3" style="color:#894e47"></i>
+                <h1 class="font-serif">The Reserve</h1>
             </a>
 
             <!-- Hamburger button (just the icon for now) -->
@@ -38,13 +40,16 @@
             </button> -->
 
             <!-- Navigation links -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#booking">Book Now</a></li>
+             <div class="collapse nav-bar-collapse justify-content-end" id="navContent">
+            <ul class="navbar-nav align-items-md-center mt-3 mt-md-0 text-center text-md-start">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#menu">Menu</a></li>
+                <li class="nav-item"><a href="#about">About Us</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="#booking">Book Now</a></li>
             </ul>
+            </div>
+            </div>
         </nav>
     </header>
 
