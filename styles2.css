@@ -59,3 +59,113 @@ h1, h2, h3, h4, h5, h6,
 .max-width-800       { max-width: 800px;  margin: 0 auto; }
 .max-width-600       { max-width: 600px;  margin: 0 auto; }
 
+
+
+
+/* button and some spacing */
+.navbar{
+  background-color: 
+}
+/* Generous top/bottom breathing room for full sections */
+.section-spaced {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Section background colours */
+.bg-cream-dark   { background-color: var(--color-cream-dark); }
+.bg-cream-lowest { background-color: var(--color-cream-lowest); }
+
+
+/* -----------------------------------------------------------------
+   5. BUTTONS
+   ----------------------------------------------------------------- */
+
+/* Solid mahogany button — the main call-to-action */
+.btn-mahogany {
+    background-color: var(--color-mahogany);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-mahogany:hover {
+    background-color: var(--color-mahogany-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-mahogany:active {
+    transform: translateY(0);
+}
+
+/* Outlined button — secondary action */
+.btn-outline-custom {
+    background-color: transparent;
+    color: var(--color-charcoal);
+    border: 1px solid var(--color-charcoal);
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--color-charcoal);
+    color: var(--color-cream);
+}
+
+
+ /* ----------------------------------------------------------------- 
+   6. NAVBAR / HEADER 
+    -----------------------------------------------------------------  */
+.navbar {
+    background-color: rgba(253, 248, 248, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-light-accent);
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    color: var(--color-charcoal);
+    letter-spacing: -0.02em;
+}
+
+.nav-link {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    color: var(--color-taupe);
+    margin: 0 0.75rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-mahogany) !important;
+}
+
+/* Underline indicator for the active link */
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-mahogany);
+}
